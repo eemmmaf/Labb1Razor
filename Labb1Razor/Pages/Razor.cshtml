@@ -1,5 +1,35 @@
 ﻿@page
 @model Labb1Razor.Pages.RazorModel
 @{
+    //Sidans titel
     ViewData["Title"] = "Razor";
+
+
+    DateTime date = DateTime.Now;
+
+    DayOfWeek day = DateTime.Today.DayOfWeek;
+
+    //Tom textsträng där olika text lagras baserat på om det är måndag eller inte
+    string outputDay;
+
+    //Gör om till sträng
+    if (day.ToString() == "Monday")
+    {
+        outputDay = "Idag är det måndag!";
+    }
+    else
+    {
+        outputDay = "Idag är det inte måndag.";
+    }
+
 }
+
+<h1>Razor</h1>
+
+<h2>Information</h2>
+
+<!--Skriver ut datum/klockslag-->
+<p>Datum/Klockslag: @date</p>
+
+<!--Skriver ut om det är måndag eller inte-->
+<p>@outputDay</p>

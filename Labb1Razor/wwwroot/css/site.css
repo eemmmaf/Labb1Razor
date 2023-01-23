@@ -1,26 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
-  font-size: 14px;
+    font-size: 62.5%;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
 }
 
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+header,
+footer{
+    background-color: lightgray;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
+
+p {
+    font-size: 1.6rem;
+}
+
+li {
+    font-size: 1.6rem;
+}
+
+/*Flexbox för layouten*/
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    max-width: 95%;
+    margin: auto;
+}
+
+.logo {
+    padding: 4rem;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main {
+    max-width: 70%;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.flex-nav {
+    max-width: 25%;
+    width: 100%;
+}
+
+footer{
+    margin: auto;
+    max-width: 95vw;
+    width: 100%;
+    white-space:normal!important;
+}
+
+nav ul{
+    max-width: 500px;
+    width: 100%;
+}
+
+nav li{
+    text-align:center;
+    margin-top: 2rem;
+    border-bottom: 1px solid groove;
+}
+
