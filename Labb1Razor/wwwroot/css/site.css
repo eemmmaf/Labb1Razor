@@ -92,4 +92,12 @@ nav li{
     margin-top: 2rem;
     border-bottom: 1px solid groove;
 }
+.date{
+    background-color: white;
+    align-self:baseline;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 1px solid grey;
+}
 

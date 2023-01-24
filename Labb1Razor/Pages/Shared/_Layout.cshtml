@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var date = DateTime.Now.ToString("yyyy/MM/dd");
+}
+
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="utf-8" />
@@ -13,7 +17,7 @@
         <header>
             <div class="flex-header">
                 <img src="~/razorlogo.svg" class="logo" />
-                <p>Klocka</p>
+                <p class="date">Dagens datum är: @date</p>
             </div>
         </header>
         <div class="flexbox">
@@ -43,7 +47,7 @@
 
 
             <!-- Här skrivs huvudinnehållet ut -->
-            <div class="main">
+            <div class="main box-shadow">
                 <main role="main" class="pb-3">
                     @RenderBody()
                 </main>
