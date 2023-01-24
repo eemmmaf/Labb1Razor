@@ -1,5 +1,6 @@
 ﻿@page
 @model Labb1Razor.Pages.RazorModel
+
 @{
     //Sidans titel
     ViewData["Title"] = "Razor";
@@ -12,7 +13,7 @@
     //Tom textsträng där olika text lagras baserat på om det är måndag eller inte
     string outputDay;
 
-    //Gör om till sträng
+    //Gör om till sträng och skriver ut olika
     if (day.ToString() == "Monday")
     {
         outputDay = "Idag är det måndag!";
@@ -22,6 +23,8 @@
         outputDay = "Idag är det inte måndag.";
     }
 
+    //Array med kurser
+    string[] listCourses = { "Webbutveckling", "Webbutveckling 22" };
 }
 
 <h1>Razor</h1>
@@ -33,3 +36,15 @@
 
 <!--Skriver ut om det är måndag eller inte-->
 <p>@outputDay</p>
+
+<h3>Kurser jag läst:</h3>
+
+
+<ul>
+    <!--Loopar igenom arrayen och skriver ut i lista-->
+    @for (int i = 0; i < listCourses.Length; i++)
+    {
+        <li>@listCourses[i]</li>
+    }
+</ul>
+
