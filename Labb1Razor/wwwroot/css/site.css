@@ -6,8 +6,6 @@ html {
     font-size: 62.5%;
 }
 
-@media (min-width: 768px) {
-}
 
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -20,8 +18,8 @@ html {
 }
 
 header,
-footer{
-    background-color: lightgray;
+footer {
+    background-color: #CEC1EC;
 }
 
 body {
@@ -30,14 +28,25 @@ body {
 
 footer p {
     text-align: center;
+    color: #000C29;
+}
+
+h1 {
+    color: #00123D;
+}
+
+h2 {
+    color: #00123D;
 }
 
 p {
     font-size: 1.6rem;
+    color: #00123D;
 }
 
 li {
     font-size: 1.6rem;
+    color: #00123D;
 }
 
 /*Flexbox för layouten*/
@@ -60,14 +69,15 @@ li {
     justify-content: space-between;
 }
 
-ul {
-    list-style-type: none;
-}
 
 .main {
     max-width: 70%;
     width: 100%;
     margin-top: 3rem;
+    background-color: #F3F0FA;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 .flex-nav {
@@ -75,29 +85,138 @@ ul {
     width: 100%;
 }
 
-footer{
+footer {
     margin: auto;
     max-width: 95vw;
     width: 100%;
-    white-space:normal!important;
+    white-space: normal !important;
 }
 
-nav ul{
+nav ul {
     max-width: 500px;
     width: 100%;
+    list-style-type: none;
 }
 
-nav li{
-    text-align:center;
+nav li {
+    text-align: center;
     margin-top: 2rem;
     border-bottom: 1px solid groove;
+    background-color: #F3F0FA;
+    color: #000C29;
 }
-.date{
-    background-color: white;
-    align-self:baseline;
+
+.date {
+    background-color: #F3F0FA;
+    align-self: baseline;
     margin-right: 2rem;
     margin-top: 3rem;
     padding: 1rem;
     border: 1px solid grey;
 }
 
+/*Sidan About*/
+.about {
+    padding: 0.5rem;
+}
+
+    .about p {
+        max-width: 550px;
+        width: 100%;
+    }
+
+.flex-container {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .flex-container img {
+        border-radius: 50%;
+        max-width: 350px;
+        width: 100%;
+    }
+
+
+/*Razor-sidan*/
+
+.razor h2, 
+.razor h3{
+    margin-top: 2rem;
+}
+
+.p{
+    margin-top: 2rem;
+}
+
+
+/*Articles som inte syns by default*/
+.collaps-article {
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 1px 2px 5px 0.5px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+/*Knapp för att fälla ut articles*/
+.collaps-btn {
+    margin-top: 2rem;
+    padding: 1rem;
+    box-shadow: 1px 2px 5px 0.5px rgba(0, 0, 0, 0.5);
+    background-color: #29194D;
+    color: white;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.flex{
+    display:flex;
+}
+
+    .flex > div {
+        width: 50%;
+        padding: 2rem;
+    }
+
+/*Media Quiries*/
+@media (max-width: 800px) {
+    .flex{
+        flex-direction: column;
+    }
+
+        .flex > div {
+            width: 100%;
+            padding: 2rem;
+        }
+
+}
+
+@media (max-width: 575px) {
+
+   .flexbox{
+       flex-direction: column;
+   }
+
+   .main{
+       max-width: 100%;
+       margin-bottom: 4rem;
+   }
+
+   nav ul{
+       width: 90vw;
+       border-bottom: 1px solid #000C29;
+       padding: 1rem;
+   }
+
+   nav li{
+       margin-bottom: 2rem;
+   }
+
+    .flex-container img{
+        max-width: 250px;
+        margin: auto;
+        display: block;
+    }
+
+}

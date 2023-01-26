@@ -27,12 +27,13 @@
     string[] listCourses = { "Webbutveckling", "Webbutveckling 22" };
 }
 
+<div class="razor">
 <h1>Razor</h1>
 
 <h2>Information</h2>
 
 <!--Skriver ut datum/klockslag-->
-<p>Datum/Klockslag: @date</p>
+    <p class="p"> <b>Datum/Klockslag:</b> @date</p>
 
 <!--Skriver ut om det är måndag eller inte-->
 <p>@outputDay</p>
@@ -47,4 +48,6 @@
         <li>@listCourses[i]</li>
     }
 </ul>
+
+</div>
 

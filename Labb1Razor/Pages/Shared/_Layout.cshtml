@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Labb1Razor.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/2090b52781.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="content">
         <header>
             <div class="flex-header">
-                <img src="~/razorlogo.svg" class="logo" />
+                <a class="nav-link text-dark" asp-area="" asp-page="/Index">
+                    <img src="~/razorlogo.svg" class="logo" />
+                </a>
                 <p class="date">Dagens datum är: @date</p>
             </div>
         </header>

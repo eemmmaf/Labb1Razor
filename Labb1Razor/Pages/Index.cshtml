@@ -4,6 +4,26 @@
     ViewData["Title"] = "Startsida";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Labb 1</h1>
+    <h1>Labb 1</h1>
+
+    <!--Två utfällbara articles-->
+    <div class="flex">
+        <div>
+    <button type="button" class="collaps-btn" aria-expanded="false" aria-controls="sect1">Om uppgiften<i class="fas fa-chevron-down arrow"></i></button>
+    <article class="collaps-article" aria-live="polite" id="sect1" role="region">
+            <p>
+                Detta moment ingår i kursen Webbutveckling med .NET. Syftet med uppgiften är att få en grundläggande uppfattning om olika begrepp och tekniker inom ASP.net Core. Syftet är också att Kunna skapa en enklare webbplats med ASP.net och
+                att förstå och kunna använda Razor-syntaxen i dynamiska ASP.net-webbsidor. I detta moment har jag skapat en webbplats med ASP.net Core och Razor.
+            </p>
+    </article>
+    </div>
+
+
+    <div>
+     <button type="button" class="collaps-btn" aria-expanded="false" aria-controls="sect1">Om kursen<i class="fas fa-chevron-down arrow"></i></button>
+    <article class="collaps-article" aria-live="polite" id="sect1" role="region">
+        <p>I denna kurs kommer jag att lära mig att skapa databas-drivna webbaserade system som är baserade på ASP.net Core MVC, Blazor och databas-anslutnignar med Entity Framework Core.</p>
+    </article>
+    </div>
+
 </div>
