@@ -5,9 +5,10 @@
     //Sidans titel
     ViewData["Title"] = "Razor";
 
-
+    //Dagens datum
     DateTime date = DateTime.Now;
 
+    //Dagens veckodag
     DayOfWeek day = DateTime.Today.DayOfWeek;
 
     //Tom textsträng där olika text lagras baserat på om det är måndag eller inte
@@ -24,7 +25,9 @@
     }
 
     //Array med kurser
-    string[] listCourses = { "Webbutveckling", "Webbutveckling 22" };
+    string[] listCourses = { "Programmering i C#.NET, DT071G", "Fullstack-utveckling med ramverk, DT193G", "Projektledning, IK060G", 
+    "Webbdesign för CMS, DT197G", "Webbutveckling III, DT173G", "Databaser, DT003G", "Webbutveckling II, DT093G", "Webbanvändbarhet, DT068G", "Digital bildbehandling för webb, DT163G",
+    "Webbutveckling I, DT057G", "Introduktion till programmering i JavaScript, DT084G"};
 }
 
 <div class="razor">

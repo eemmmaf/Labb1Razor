@@ -86,7 +86,7 @@ li {
 }
 
 footer {
-    margin: auto;
+    margin: 3rem auto auto auto;
     max-width: 95vw;
     width: 100%;
     white-space: normal !important;
@@ -113,6 +113,10 @@ nav li {
     margin-top: 3rem;
     padding: 1rem;
     border: 1px solid grey;
+}
+
+main{
+    margin-bottom: 4rem;
 }
 
 /*Sidan About*/
@@ -217,6 +221,10 @@ nav li {
         max-width: 250px;
         margin: auto;
         display: block;
+    }
+
+    .date{
+        font-size: 1.2rem;
     }
 
 }

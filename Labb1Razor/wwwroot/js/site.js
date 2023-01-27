@@ -3,10 +3,14 @@
 
 // Write your JavaScript code.
 
+//Knapparna som expanderas
 let buttonEl = document.getElementsByClassName("collaps-btn");
 
+
+//Loopar igenom knapparna och lägger till en eventlistener på dom
 for (i = 0; i < buttonEl.length; i++) {
     buttonEl[i].addEventListener("click", function () {
+        //Lägger till active-klass
         this.classList.toggle("active");
         let content = this.nextElementSibling;
         if (content.style.display === "block") {

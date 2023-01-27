@@ -1,4 +1,5 @@
 ﻿@{
+    //Dagens datum
     var date = DateTime.Now.ToString("yyyy/MM/dd");
 }
 
@@ -18,8 +19,10 @@
         <header>
             <div class="flex-header">
                 <a class="nav-link text-dark" asp-area="" asp-page="/Index">
-                    <img src="~/razorlogo.svg" class="logo" />
+                    <!--Logotypen-->
+                    <img src="~/razorlogo.svg" class="logo" alt="" />
                 </a>
+                <!--Här skrivs dagens datum ut-->
                 <p class="date">Dagens datum är: @date</p>
             </div>
         </header>
@@ -57,10 +60,10 @@
             </div>
         </div>
 
-
-    <footer class="border-top footer">
-        <p>Av Emma Forslund.Kontakta mig via e-post: emfo2102@student.miun.se</p>
-    </footer>
+        <!--Footer-->
+        <footer class="border-top footer">
+            <p>Av Emma Forslund.Kontakta mig via e-post: emfo2102@student.miun.se</p>
+        </footer>
 
     </div>
 
